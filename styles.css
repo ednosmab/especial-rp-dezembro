@@ -8,6 +8,7 @@
 :root{
     font-size: 62.5%;
     color: #fff;
+    font-family: sans-serif;
 }
 
 body{
@@ -26,22 +27,25 @@ main{
 }
 
 img{
-    width: 22vw;
+    width: 20vw;
     position: absolute;
 }
 
 section{
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 
 p{
-    font-size: 2.6rem;
+    font-size: 2.4rem;
+    line-height: 70px;
+    text-align: center;
 }
 
 input{
-    width: 150px;
+    width: 140px;
     font-size: 2.7rem;
+    font-weight: bold;
     text-align: center;
     padding: .2rem;
 }
