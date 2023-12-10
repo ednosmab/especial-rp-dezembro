@@ -18,10 +18,10 @@ function fade(){
 
 
 function verificar(){
-    if(inputUm.value == "avanço"
-         && inputDois.value == "maior" 
-         && inputTres.value == "ontem" 
-         && inputQuatro.value == "amanhã"){
+    if(inputUm.value.trim().toLowerCase() == "avanço"
+         && inputDois.value.trim().toLowerCase() == "maior" 
+         && inputTres.value.trim().toLowerCase() == "ontem" 
+         && inputQuatro.value.trim().toLowerCase() == "amanhã"){
         fade()
     }
 }
