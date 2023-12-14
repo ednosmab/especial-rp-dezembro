@@ -8,6 +8,24 @@ let video = document.getElementsByTagName("video")
 let botao = document.getElementsByTagName("button")
 console.log(paragrafo)
 
+video[0].addEventListener("click", handlePlayButton, false);
+
+async function playVideo() {
+    try {
+        await videoElem.play();
+    } catch (err) {
+        console.log(err);
+    }
+}
+
+function handlePlayButton() {
+    if (videoElem.paused) {
+        playVideo();
+    } else {
+        videoElem.pause();
+    }
+}
+
 function fade(){
     interrogacao[0].setAttribute("data-fade", "fade_out");
     // interrogacao[1].setAttribute("data-fade", "fade_in");
