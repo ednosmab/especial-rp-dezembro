@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
 
 *{
     margin: 0;
@@ -48,7 +48,7 @@ p{
 input{
     width: 140px;
     font-size: 2.7rem;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
     padding: .2rem;
     border-radius: 5px ;
