@@ -1,14 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     transition: 0.5s;
+    font-family: var(--font-family);
 }
 
 :root{
     font-size: 62.5%;
     color: #fff;
-    font-family: sans-serif;
+    --font-family: 'Montserrat', sans-serif;
 }
 
 body{
@@ -37,7 +40,7 @@ section{
 
 
 p{
-    font-size: 2.4rem;
+    font-size: 2.5rem;
     line-height: 70px;
     text-align: center;
 }
@@ -45,9 +48,11 @@ p{
 input{
     width: 140px;
     font-size: 2.7rem;
-    font-weight: bold;
+    font-weight: 600;
     text-align: center;
     padding: .2rem;
+    border-radius: 5px ;
+    border: none;
 }
 
 .btn-container{
@@ -92,4 +97,73 @@ img.sensei[data-fade="fade_in"]{
 video[data-fade="fade_in"]{
     width: 90vw;
     height: 90vh;
+}
+
+@media (max-width: 1179px){
+    .container{
+        padding: 37px 60px;
+    }
+    p{
+        font-size: 2.2rem;
+        line-height: 60px;
+    }
+    input{
+        font-size: 2.4rem;
+    }
+    .btn-container{
+        margin-top: 30px;
+    }
+    .myButton {
+        padding: .7rem 1.7rem;
+        font-size: 2.7rem;
+    }
+
+}
+
+@media(max-width: 1037px){
+    .container{
+        padding: 30px 40px;
+    }
+    main{
+        position: relative;
+        height: 35vh;
+    }
+    p{
+        font-size: 1.9rem;
+    }
+    input{
+        font-size: 2.1rem;
+    }
+    .btn-container{
+        margin-top: 30px;
+    }
+    .myButton {
+        padding: .4rem 1.4rem;
+        font-size: 2.4rem;
+    }
+}
+
+@media(max-width: 864px){
+    .container{
+        padding: 27px 20px;
+    }
+    main{
+        position: relative;
+        height: 35vh;
+    }
+    p{
+        font-size: 1.6rem;
+        line-height: 45px;
+    }
+    input{
+        width: 110px;
+        font-size: 1.8rem;
+    }
+    .btn-container{
+        margin-top: 25px;
+    }
+    .myButton {
+        padding: .4rem 1.4rem;
+        font-size: 1.8rem;
+    }
 }
